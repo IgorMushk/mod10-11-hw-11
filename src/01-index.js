@@ -1,5 +1,3 @@
-// index.js не используется, осчьален т.к. parcel если его нет выдает ошибку
-// index.js для кажого примера 01- 02- ...
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 11</title>
+    <link rel="stylesheet" href="./sass/01-index.scss" />
+    <script type="module" src="./01-index.js"></script>
+  </head>
+  <body>
+    <form class="search-form" id="search-form">
+      <div class="wrapper-input-button">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="btn-search">
+          <svg class="btn-icon">
+            <use href="./images/symbol-defs.svg#icon-search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <div class="gallery">
+      <!-- Карточки изображений -->
+    </div>
+    <!--  for infiniti scroll -->
+    <div class="js-guard"></div>
+    <button type="button" class="load-more is-hidden" hidden>Load more</button>
+    <p style="margin-left: 20px">
+      <a href="./index.html"><<< - Go back "Load More"</a>
+    </p>
+  </body>
+</html>
