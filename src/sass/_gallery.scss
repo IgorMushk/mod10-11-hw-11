@@ -96,3 +96,37 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.is-hidden {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  right: 20px;
+  //bottom: 30px;
+  bottom: 0px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 0px 25px 3px #0000003d, 0 0px 4px 4px #0000004f;
+  //border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+
+.btn-up-icon {
+  width: 18px;
+  height: 18px;
+  //fill: #8bc34a;
+  fill: #404bbf;
+  //fill: #2e2f42;
+  //stroke: #2e2f42;
+  border: none;
+}
