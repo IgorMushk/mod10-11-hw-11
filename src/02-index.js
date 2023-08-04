@@ -33,7 +33,7 @@ const btnUp = {
     this.element.hidden = false;
   },
   hide() {
-    this.element.hidden = false; //true;
+    this.element.hidden = true;
   },
   addEventListener() {
     window.addEventListener('scroll', () => {
