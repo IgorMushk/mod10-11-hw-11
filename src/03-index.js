@@ -68,6 +68,7 @@ function onSubmitSearch(event) {
   getData(searchQuery, currentPage, PER_PAGE);
 }
 
+// function getData() -> dataServ.js
 async function getData(searchQuery, currentPage, PER_PAGE) {
   //fetchImages(searchQuery, currentPage, PER_PAGE)
   try {
