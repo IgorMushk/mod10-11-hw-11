@@ -22,7 +22,7 @@ const simpleLightBoxLightbox = new SimpleLightbox('.gallery a', {
 
 let options = {
   root: null,
-  rootMargin: '300px',
+  rootMargin: '100px',
   threshold: 1.0,
 };
 let observer = new IntersectionObserver(onLoadInfinitiScroll, options);
@@ -70,6 +70,7 @@ function onSubmitSearch(event) {
 function getData(searchQuery, currentPage, PER_PAGE) {
   fetchImages(searchQuery, currentPage, PER_PAGE)
     .then(data => {
+      console.log(currentPage);
       if (!data.hits.length & !data.totalHits) {
         loadMoreRef.classList.add('is-hidden');
         return Notify.failure(
@@ -85,13 +86,13 @@ function getData(searchQuery, currentPage, PER_PAGE) {
       simpleLightBoxLightbox.refresh();
       observer.observe(target); // + for infiniti scroll
 
-      if (data.hits.length === data.totalHits) {
-        // 'zaz'
-        loadMoreRef.classList.add('is-hidden');
-        Notify.warning(
-          "We're sorry, but you've reached the end of search results."
-        );
-      }
+      //   if (data.hits.length === data.totalHits) {
+      //     // 'zaz'
+      //     loadMoreRef.classList.add('is-hidden');
+      //     Notify.warning(
+      //       "We're sorry, but you've reached the end of search results."
+      //     );
+      //   }
       if (data.hits.length < data.totalHits) {
         //loadMoreRef.classList.remove('is-hidden'); //- for Btn  loadMore
       }
@@ -105,8 +106,10 @@ function getData(searchQuery, currentPage, PER_PAGE) {
       } else {
         //loadMoreRef.classList.remove('is-hidden'); // -
       }
-      smoothScroll(galleryRef);
-      //
+      //   if (currentPage > 1) {
+      //     console.log(currentPage);
+      //     smoothScroll(galleryRef);
+      //   }
     })
     .catch(err => console.log(err));
 }
