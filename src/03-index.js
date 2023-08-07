@@ -22,6 +22,7 @@ const simpleLightBoxLightbox = new SimpleLightbox('.gallery a', {
 
 let options = {
   root: null,
+  // 300px ->100px
   rootMargin: '100px',
   threshold: 1.0,
 };
