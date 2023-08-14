@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:4040';
+//const BASE_URL = 'http://localhost:4040';
+const BASE_URL = 'http://localhost:3000';
 
 function removeBook(bookId) {
   const url = `${BASE_URL}/books/${bookId}`;
@@ -12,3 +13,5 @@ function removeBook(bookId) {
 // removeBook(15);
 // removeBook(14);
 
+// removeBook(25);
+// removeBook(26);
