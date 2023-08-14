@@ -1,7 +1,12 @@
-const BASE_URL = 'http://localhost:4040';
+//const BASE_URL = 'http://localhost:4040';
 
-function fetchBooks() {
-  return fetch(`${BASE_URL}/books`).then(res => res.json());
+const BASE_URL = 'http://localhost:3000';
+
+http: function fetchBooks() {
+  //return fetch(`${BASE_URL}/books`).then(res => res.json());
+  return fetch(`${BASE_URL}/books`)
+    .then(res => res.json())
+    .then(console.log);
 }
 
 function fetchBookById(bookId) {
