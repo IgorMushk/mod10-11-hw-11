@@ -13,5 +13,5 @@ function removeBook(bookId) {
 // removeBook(15);
 // removeBook(14);
 
-// removeBook(25);
-// removeBook(26);
+removeBook(25);
+removeBook(26);
