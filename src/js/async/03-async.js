@@ -11,7 +11,7 @@ function getFruit(name) {
   };
 
   return new Promise((resolve, reject) =>
-    setTimeout(() => resolve(fruits[name]), 500),
+    setTimeout(() => resolve(fruits[name]), 500)
   );
 }
 
@@ -32,7 +32,9 @@ async function aMakeSmoothie() {
   }
 }
 
-aMakeSmoothie();
+//-aMakeSmoothie();
+// как из асинхронной функции, которая возвращает промис, получить что-то во внешнем коде
+aMakeSmoothie().then(fruits => console.log('Вывод во внешнем коде :', fruits));
 
 // async function fn () {}
 

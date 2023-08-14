@@ -1,6 +1,10 @@
 const validJSON = '{ "name": "Манго", "age": 3 }';
 const invalidJSON = '{ бекенд вернул вот такое чудо }';
 
+//+
+console.log(validJSON);
+//
+
 try {
   console.log(1);
 

@@ -18,6 +18,12 @@ try {
 
   console.log('Внутри try после myVar');
 } catch (error) {
+  // +
+  // console.dir(error);
+  // console.dir(error.name);
+  // console.dir(error.message);
+  // console.dir(error.stack);
+  //
   console.log('Ошибка!');
 }
 
