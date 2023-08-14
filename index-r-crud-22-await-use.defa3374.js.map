@@ -1,0 +1,1 @@
+{"mappings":"gfAAAA,EAAA,S","sources":["src/js/async/ui.js"],"sourcesContent":["async function addAndRenderBook() {\n  try {\n    const book = await addBook({});\n    console.log(book);\n  } catch (error) {\n    console.log(error);\n  }\n}\n"],"names":["parcelRequire"],"version":3,"file":"index-r-crud-22-await-use.defa3374.js.map"}
